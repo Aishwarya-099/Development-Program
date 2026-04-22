@@ -1,0 +1,46 @@
+{
+  "cartId": "CART12345",
+  "cartDate": "2026-04-21",
+  "customerId": "CUST001",
+  "customerName": "Raj Kumar",
+  "products": [
+    {
+      "productId": "PROD001",
+      "productName": "Laptop",
+      "category": "Electronics",
+      "price": 74699,
+      "quantity": 1,
+      "subtotal": 74699
+    },
+    {
+      "productId": "PROD002",
+      "productName": "USB Mouse",
+      "category": "Accessories",
+      "price": 2117,
+      "quantity": 3,
+      "subtotal": 6351
+    },
+    {
+      "productId": "PROD003",
+      "productName": "Mechanical Keyboard",
+      "category": "Accessories",
+      "price": 9960,
+      "quantity": 1,
+      "subtotal": 9960
+    },
+    {
+      "productId": "PROD004",
+      "productName": "Monitor Stand",
+      "category": "Accessories",
+      "price": 3817,
+      "quantity": 2,
+      "subtotal": 7634
+    }
+  ],
+  "subtotal": 98644,
+  "tax": 9864,
+  "shippingCost": 300,
+  "totalAmount": 108808,
+  "currency": "INR",
+  "status": "Active"
+}

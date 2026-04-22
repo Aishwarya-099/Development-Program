@@ -1,0 +1,64 @@
+{
+  "postId": "POST123456",
+  "postDate": "2026-04-21T10:30:00Z",
+  "user": {
+    "userId": "USER001",
+    "username": "rajkumar_tech",
+    "fullName": "Raj Kumar",
+    "profileImage": "https://example.com/profiles/johndoe.jpg",
+    "verified": true
+  },
+  "content": "Just finished an amazing project on web supporting technology! Learning Node.js, HTML, CSS, and JavaScript has been incredible. Excited to share my journey with everyone! #WebDevelopment #Coding #Learning",
+  "media": {
+    "images": ["https://example.com/post/img1.jpg", "https://example.com/post/img2.jpg"],
+    "videos": []
+  },
+  "likes": {
+    "count": 245,
+    "likedBy": [
+      {
+        "userId": "USER002",
+        "username": "priya_sharma"
+      },
+      {
+        "userId": "USER003",
+        "username": "alice_wonder"
+      },
+      {
+        "userId": "USER004",
+        "username": "bob_builder"
+      }
+    ]
+  },
+  "comments": [
+    {
+      "commentId": "COMMENT001",
+      "userId": "USER005",
+      "username": "charlie_brown",
+      "text": "Great work! Keep it up! 🎉",
+      "timestamp": "2026-04-21T11:00:00Z",
+      "likes": 12
+    },
+    {
+      "commentId": "COMMENT002",
+      "userId": "USER006",
+      "username": "diana_prince",
+      "text": "This is exactly what I was looking for. Thanks for sharing!",
+      "timestamp": "2026-04-21T11:15:00Z",
+      "likes": 8
+    },
+    {
+      "commentId": "COMMENT003",
+      "userId": "USER007",
+      "username": "eve_johnson",
+      "text": "Would love to connect and collaborate on future projects!",
+      "timestamp": "2026-04-21T11:30:00Z",
+      "likes": 5
+    }
+  ],
+  "commentCount": 3,
+  "shareCount": 45,
+  "viewCount": 1250,
+  "isPublic": true,
+  "visibility": "Public"
+}

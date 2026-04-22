@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form for Job Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration Form for Job Application</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <span class="error" id="firstNameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <span class="error" id="lastNameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <span class="error" id="phoneError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <span class="error" id="dobError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+                <span class="error" id="addressError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="education">Education Qualification:</label>
+                <select id="education" name="education" required>
+                    <option value="">Select Education Level</option>
+                    <option value="12th">12th Pass</option>
+                    <option value="diploma">Diploma</option>
+                    <option value="bachelors">Bachelor's Degree</option>
+                    <option value="masters">Master's Degree</option>
+                </select>
+                <span class="error" id="educationError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Years of Experience:</label>
+                <input type="number" id="experience" name="experience" min="0" required>
+                <span class="error" id="experienceError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="position">Position Applied For:</label>
+                <input type="text" id="position" name="position" required>
+                <span class="error" id="positionError"></span>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+            <button type="reset" class="btn btn-reset">Reset</button>
+        </form>
+        <div id="successMessage" class="success-message" style="display: none;">
+            Registration submitted successfully!
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

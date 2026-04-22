@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Electricity Bill Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚡ Online Electricity Bill Payment</h1>
+            <p>Pay your electricity bill online securely</p>
+        </div>
+
+        <form id="billForm">
+            <!-- Account Information -->
+            <fieldset>
+                <legend>Account Information</legend>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="consumerName">Consumer Name:</label>
+                        <input type="text" id="consumerName" name="consumerName" required>
+                        <span class="error" id="consumerNameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="accountNumber">Account Number:</label>
+                        <input type="text" id="accountNumber" name="accountNumber" placeholder="e.g., ACC123456" required>
+                        <span class="error" id="accountNumberError"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="consumerType">Consumer Type:</label>
+                        <select id="consumerType" name="consumerType" required>
+                            <option value="">Select Consumer Type</option>
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="industrial">Industrial</option>
+                            <option value="agricultural">Agricultural</option>
+                        </select>
+                        <span class="error" id="consumerTypeError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="connectionDate">Connection Date:</label>
+                        <input type="date" id="connectionDate" name="connectionDate" required>
+                        <span class="error" id="connectionDateError"></span>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Meter Reading -->
+            <fieldset>
+                <legend>Meter Reading</legend>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="previousReading">Previous Month Reading (kWh):</label>
+                        <input type="number" id="previousReading" name="previousReading" min="0" required>
+                        <span class="error" id="previousReadingError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="currentReading">Current Month Reading (kWh):</label>
+                        <input type="number" id="currentReading" name="currentReading" min="0" required>
+                        <span class="error" id="currentReadingError"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="unitsConsumed">Units Consumed (Auto-calculated):</label>
+                    <input type="number" id="unitsConsumed" name="unitsConsumed" readonly>
+                </div>
+            </fieldset>
+
+            <!-- Rate Information -->
+            <fieldset>
+                <legend>Rate Information</legend>
+
+                <div class="form-group">
+                    <label for="tariff">Tariff Rate (₹/kWh):</label>
+                    <input type="number" id="tariff" name="tariff" step="0.01" placeholder="e.g., 5.50" required>
+                    <span class="error" id="tariffError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="fixedCharge">Fixed Monthly Charge (₹):</label>
+                    <input type="number" id="fixedCharge" name="fixedCharge" step="0.01" placeholder="e.g., 100" required>
+                    <span class="error" id="fixedChargeError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="tax">Tax Rate (%):</label>
+                    <input type="number" id="tax" name="tax" step="0.01" placeholder="e.g., 5" required>
+                    <span class="error" id="taxError"></span>
+                </div>
+            </fieldset>
+
+            <!-- Bill Calculation -->
+            <fieldset>
+                <legend>Bill Summary</legend>
+
+                <div class="bill-summary">
+                    <div class="summary-row">
+                        <span>Units × Tariff:</span>
+                        <span id="energyCharges">₹0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Fixed Charge:</span>
+                        <span id="fixedChargeDisplay">₹0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">₹0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax:</span>
+                        <span id="taxAmount">₹0.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total Amount Due:</span>
+                        <span id="totalAmount">₹0.00</span>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Payment Details -->
+            <fieldset>
+                <legend>Payment Details</legend>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="billMonth">Bill Month:</label>
+                        <input type="month" id="billMonth" name="billMonth" required>
+                        <span class="error" id="billMonthError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dueDate">Due Date:</label>
+                        <input type="date" id="dueDate" name="dueDate" required>
+                        <span class="error" id="dueDateError"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="paymentMethod">Payment Method:</label>
+                        <select id="paymentMethod" name="paymentMethod" required>
+                            <option value="">Select Payment Method</option>
+                            <option value="creditcard">Credit Card</option>
+                            <option value="debitcard">Debit Card</option>
+                            <option value="netbanking">Net Banking</option>
+                            <option value="upi">UPI</option>
+                        </select>
+                        <span class="error" id="paymentMethodError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span class="error" id="phoneError"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+            </fieldset>
+
+            <div class="form-buttons">
+                <button type="button" class="btn btn-calculate" onclick="calculateBill()">Calculate Bill</button>
+                <button type="submit" class="btn btn-submit">Submit Payment</button>
+                <button type="reset" class="btn btn-reset">Reset</button>
+            </div>
+        </form>
+
+        <div id="successMessage" class="success-message" style="display: none;">
+            ✓ Bill payment submitted successfully!
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

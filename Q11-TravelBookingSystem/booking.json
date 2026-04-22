@@ -1,0 +1,165 @@
+{
+  "bookingSystemId": "TRAVEL001",
+  "systemName": "India Travel Booking System",
+  "users": [
+    {
+      "userId": "USER001",
+      "firstName": "Arun",
+      "lastName": "Kumar",
+      "email": "arun.kumar@email.com",
+      "phone": "+91-9876-123456",
+      "registrationDate": "2026-01-15",
+      "totalBookings": 5,
+      "totalSpent": 1250000.00,
+      "loyaltyPoints": 1500
+    },
+    {
+      "userId": "USER002",
+      "firstName": "Neha",
+      "lastName": "Singh",
+      "email": "neha.singh@email.com",
+      "phone": "+91-8765-654321",
+      "registrationDate": "2026-02-20",
+      "totalBookings": 3,
+      "totalSpent": 706500.00,
+      "loyaltyPoints": 850
+    }
+  ],
+  "trips": [
+    {
+      "tripId": "TRIP001",
+      "userId": "USER001",
+      "tripName": "South India Tour",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-15",
+      "destinations": ["Chennai", "Bangalore", "Kochi"],
+      "duration": "15 days",
+      "totalCost": 415000.00,
+      "status": "Confirmed",
+      "bookingDate": "2026-04-01"
+    },
+    {
+      "tripId": "TRIP002",
+      "userId": "USER002",
+      "tripName": "North India Adventure",
+      "startDate": "2026-07-10",
+      "endDate": "2026-07-25",
+      "destinations": ["Delhi", "Agra", "Jaipur"],
+      "duration": "15 days",
+      "totalCost": 290500.00,
+      "status": "Pending",
+      "bookingDate": "2026-04-15"
+    }
+  ],
+  "hotels": [
+    {
+      "hotelId": "HOTEL001",
+      "hotelName": "Taj Chennai Hotel",
+      "city": "Chennai",
+      "country": "India",
+      "rating": 5,
+      "pricePerNight": 16600.00,
+      "currency": "INR",
+      "availableRooms": 15,
+      "amenities": ["WiFi", "Gym", "Restaurant", "Spa", "Pool"],
+      "address": "123 Marina Beach Road"
+    },
+    {
+      "hotelId": "HOTEL002",
+      "hotelName": "ITC Bangalore",
+      "city": "Bangalore",
+      "country": "India",
+      "rating": 4,
+      "pricePerNight": 14940.00,
+      "currency": "INR",
+      "availableRooms": 8,
+      "amenities": ["WiFi", "Restaurant", "Room Service"],
+      "address": "456 Residency Road"
+    },
+    {
+      "hotelId": "HOTEL003",
+      "hotelName": "Taj Kochi Resort",
+      "city": "Kochi",
+      "country": "India",
+      "rating": 5,
+      "pricePerNight": 9960.00,
+      "currency": "INR",
+      "availableRooms": 25,
+      "amenities": ["Beach Access", "WiFi", "Gym", "Restaurant", "Pool", "Spa"],
+      "address": "789 Fort Kochi"
+    }
+  ],
+  "flights": [
+    {
+      "flightId": "FLIGHT001",
+      "flightNumber": "IG100",
+      "airline": "Indigo Airlines",
+      "departure": {
+        "city": "Delhi",
+        "airport": "DEL",
+        "date": "2026-06-01",
+        "time": "14:30"
+      },
+      "arrival": {
+        "city": "Chennai",
+        "airport": "MAA",
+        "date": "2026-06-01",
+        "time": "20:00"
+      },
+      "duration": "2h 30m",
+      "pricePerPerson": 6640.00,
+      "availableSeats": 50,
+      "seatClass": "Economy"
+    },
+    {
+      "flightId": "FLIGHT002",
+      "flightNumber": "SG434",
+      "airline": "SpiceJet",
+      "departure": {
+        "city": "Delhi",
+        "airport": "DEL",
+        "date": "2026-07-10",
+        "time": "10:00"
+      },
+      "arrival": {
+        "city": "Agra",
+        "airport": "AGR",
+        "date": "2026-07-10",
+        "time": "11:30"
+      },
+      "duration": "1h 30m",
+      "pricePerPerson": 3738.00,
+      "availableSeats": 100,
+      "seatClass": "Economy"
+    }
+  ],
+  "bookings": [
+    {
+      "bookingId": "BOOKING001",
+      "tripId": "TRIP001",
+      "userId": "USER001",
+      "bookingDate": "2026-04-01",
+      "hotelId": "HOTEL001",
+      "checkInDate": "2026-06-01",
+      "checkOutDate": "2026-06-05",
+      "nights": 4,
+      "pricePerNight": 16600.00,
+      "totalCost": 66400.00,
+      "status": "Confirmed",
+      "roomType": "Deluxe Double"
+    },
+    {
+      "bookingId": "BOOKING002",
+      "tripId": "TRIP001",
+      "userId": "USER001",
+      "bookingDate": "2026-04-01",
+      "flightId": "FLIGHT001",
+      "departureDate": "2026-06-01",
+      "passengers": 2,
+      "pricePerPerson": 6640.00,
+      "totalCost": 13280.00,
+      "status": "Confirmed",
+      "seatNumbers": ["12A", "12B"]
+    }
+  ]
+}

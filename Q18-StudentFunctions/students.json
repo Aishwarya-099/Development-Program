@@ -1,0 +1,35 @@
+[
+    {
+        "studentId": "STU001",
+        "name": "Aarav Sharma",
+        "email": "aarav.sharma@school.edu",
+        "marks": {
+            "math": 92,
+            "english": 88,
+            "science": 90,
+            "social": 85
+        }
+    },
+    {
+        "studentId": "STU002",
+        "name": "Priya Verma",
+        "email": "priya.verma@school.edu",
+        "marks": {
+            "math": 88,
+            "english": 92,
+            "science": 85,
+            "social": 88
+        }
+    },
+    {
+        "studentId": "STU003",
+        "name": "Rajesh Kumar",
+        "email": "rajesh.kumar@school.edu",
+        "marks": {
+            "math": 95,
+            "english": 85,
+            "science": 92,
+            "social": 90
+        }
+    }
+]

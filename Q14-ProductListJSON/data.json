@@ -1,0 +1,30 @@
+[
+  {
+    "productId": "PROD001",
+    "productName": "Laptop",
+    "category": "Electronics",
+    "price": 74699,
+    "stock": 15
+  },
+  {
+    "productId": "PROD002",
+    "productName": "Smartphone",
+    "category": "Electronics",
+    "price": 49799,
+    "stock": 30
+  },
+  {
+    "productId": "PROD003",
+    "productName": "Wireless Headphones",
+    "category": "Accessories",
+    "price": 16599,
+    "stock": 50
+  },
+  {
+    "productId": "PROD004",
+    "productName": "USB Cable",
+    "category": "Accessories",
+    "price": 1077,
+    "stock": 100
+  }
+]

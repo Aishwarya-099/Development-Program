@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Online Shopping Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250?text=Laptop" alt="Laptop" class="product-image">
+                    <h3>Laptop</h3>
+                    <p class="price">₹74,699</p>
+                    <a href="#" class="view-details" onclick="showDescription(event, 'Laptop', 'High performance laptop with 16GB RAM, 512GB SSD, Intel i7 processor, 15.6-inch FHD display, up to 10 hours battery life.')">View Details</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250?text=Smartphone" alt="Smartphone" class="product-image">
+                    <h3>Smartphone</h3>
+                    <p class="price">₹49,799</p>
+                    <a href="#" class="view-details" onclick="showDescription(event, 'Smartphone', '6.5-inch AMOLED display, 5G connectivity, 64MP camera, 128GB storage, 5000mAh battery, Fast charging support.')">View Details</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250?text=Headphones" alt="Headphones" class="product-image">
+                    <h3>Headphones</h3>
+                    <p class="price">₹16,599</p>
+                    <a href="#" class="view-details" onclick="showDescription(event, 'Headphones', 'Wireless noise-cancelling headphones, 30-hour battery life, Active Noise Cancellation, Comfortable fit, Premium sound quality.')">View Details</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250?text=Tablet" alt="Tablet" class="product-image">
+                    <h3>Tablet</h3>
+                    <p class="price">₹37,299</p>
+                    <a href="#" class="view-details" onclick="showDescription(event, 'Tablet', '10-inch Retina display, 256GB storage, Quad-core processor, 7500mAh battery, Stylus support, Perfect for work and entertainment.')">View Details</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250?text=Smartwatch" alt="Smartwatch" class="product-image">
+                    <h3>Smartwatch</h3>
+                    <p class="price">₹24,899</p>
+                    <a href="#" class="view-details" onclick="showDescription(event, 'Smartwatch', 'Fitness tracking, Heart rate monitor, Sleep tracking, Water resistant, 5-day battery life, Multiple watch faces.')">View Details</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250?text=Camera" alt="Camera" class="product-image">
+                    <h3>Camera</h3>
+                    <p class="price">₹62,199</p>
+                    <a href="#" class="view-details" onclick="showDescription(event, 'Camera', '20MP sensor, 4K video recording, Optical image stabilization, Weather sealed body, Professional quality images.')">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="description">
+            <h2>Product Description</h2>
+            <div id="descriptionContent" style="display: none;">
+                <h3 id="descTitle"></h3>
+                <p id="descText"></p>
+                <button onclick="closeDescription()">Close</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Online Shopping Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+[
+  {
+    "userId": "USER001",
+    "name": "Aarav Sharma",
+    "age": 22,
+    "skills": ["JavaScript", "Node.js", "React", "MongoDB"]
+  },
+  {
+    "userId": "USER002",
+    "name": "Priya Verma",
+    "age": 20,
+    "skills": ["Python", "Django", "PostgreSQL", "REST APIs"]
+  },
+  {
+    "userId": "USER003",
+    "name": "Rajesh Kumar",
+    "age": 23,
+    "skills": ["Java", "Spring Boot", "MySQL", "AWS"]
+  }
+]

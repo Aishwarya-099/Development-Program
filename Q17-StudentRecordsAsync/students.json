@@ -1,0 +1,16 @@
+[
+    {
+        "studentId": "STU001",
+        "name": "Aarav Sharma",
+        "email": "aarav.sharma@school.edu",
+        "grade": "10-A",
+        "marks": 92
+    },
+    {
+        "studentId": "STU002",
+        "name": "Priya Verma",
+        "email": "priya.verma@school.edu",
+        "grade": "10-B",
+        "marks": 88
+    }
+]

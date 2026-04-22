@@ -1,0 +1,147 @@
+{
+  "airlineId": "AIRLINE001",
+  "airlineName": "Indigo Airways",
+  "flights": [
+    {
+      "flightId": "FL001",
+      "flightNumber": "IG101",
+      "aircraftType": "Airbus A320",
+      "capacity": 180,
+      "departureCity": "Mumbai (BOM)",
+      "arrivalCity": "Delhi (DEL)",
+      "departureTime": "2026-04-21T08:00:00Z",
+      "arrivalTime": "2026-04-21T10:30:00Z",
+      "duration": "2h 30m",
+      "status": "On Schedule",
+      "availableSeats": 28
+    },
+    {
+      "flightId": "FL002",
+      "flightNumber": "IG202",
+      "aircraftType": "Boeing 737",
+      "capacity": 160,
+      "departureCity": "Delhi (DEL)",
+      "arrivalCity": "Bangalore (BLR)",
+      "departureTime": "2026-04-21T14:00:00Z",
+      "arrivalTime": "2026-04-21T16:00:00Z",
+      "duration": "2h 0m",
+      "status": "On Schedule",
+      "availableSeats": 42
+    },
+    {
+      "flightId": "FL003",
+      "flightNumber": "IG303",
+      "aircraftType": "Airbus A319",
+      "capacity": 144,
+      "departureCity": "Bangalore (BLR)",
+      "arrivalCity": "Chennai (MAA)",
+      "departureTime": "2026-04-21T18:00:00Z",
+      "arrivalTime": "2026-04-21T19:30:00Z",
+      "duration": "1h 30m",
+      "status": "On Schedule",
+      "availableSeats": 19
+    }
+  ],
+  "passengers": [
+    {
+      "passengerId": "PASS001",
+      "firstName": "Raj",
+      "lastName": "Sharma",
+      "dateOfBirth": "1985-06-15",
+      "passport": "AB123456",
+      "nationality": "India",
+      "email": "raj.sharma@email.com",
+      "phone": "+91-9876-543210"
+    },
+    {
+      "passengerId": "PASS002",
+      "firstName": "Priya",
+      "lastName": "Patel",
+      "dateOfBirth": "1990-03-22",
+      "passport": "BC789012",
+      "nationality": "India",
+      "email": "priya.patel@email.com",
+      "phone": "+91-8765-432109"
+    },
+    {
+      "passengerId": "PASS003",
+      "firstName": "Arjun",
+      "lastName": "Singh",
+      "dateOfBirth": "1978-11-08",
+      "passport": "CD345678",
+      "nationality": "India",
+      "email": "arjun.singh@email.com",
+      "phone": "+91-7654-321098"
+    }
+  ],
+  "tickets": [
+    {
+      "ticketId": "TKT001",
+      "ticketNumber": "IG101-001",
+      "passengerId": "PASS001",
+      "flightId": "FL001",
+      "bookingDate": "2026-04-01",
+      "seatNumber": "12A",
+      "seatClass": "Business",
+      "bookingReference": "RSHAR12",
+      "price": 12000,
+      "status": "Confirmed"
+    },
+    {
+      "ticketId": "TKT002",
+      "ticketNumber": "IG101-002",
+      "passengerId": "PASS002",
+      "flightId": "FL001",
+      "bookingDate": "2026-04-02",
+      "seatNumber": "12B",
+      "seatClass": "Business",
+      "bookingReference": "PPAT34",
+      "price": 12000,
+      "status": "Confirmed"
+    },
+    {
+      "ticketId": "TKT003",
+      "ticketNumber": "IG202-001",
+      "passengerId": "PASS003",
+      "flightId": "FL002",
+      "bookingDate": "2026-04-05",
+      "seatNumber": "24F",
+      "seatClass": "Economy",
+      "bookingReference": "ASIN56",
+      "price": 5500,
+      "status": "Confirmed"
+    }
+  ],
+  "baggage": [
+    {
+      "baggageId": "BAG001",
+      "ticketId": "TKT001",
+      "baggageType": "Checked Luggage",
+      "weight": 23.5,
+      "weightUnit": "kg",
+      "allowedWeight": 32,
+      "baggageTag": "GW-BAG-001",
+      "status": "Checked In"
+    },
+    {
+      "baggageId": "BAG002",
+      "ticketId": "TKT001",
+      "baggageType": "Cabin Baggage",
+      "weight": 8.2,
+      "weightUnit": "kg",
+      "allowedWeight": 8,
+      "baggageTag": "GW-BAG-002",
+      "status": "Checked In"
+    },
+    {
+      "baggageId": "BAG003",
+      "ticketId": "TKT002",
+      "baggageType": "Checked Luggage",
+      "weight": 21.0,
+      "weightUnit": "kg",
+      "allowedWeight": 32,
+      "baggageTag": "GW-BAG-003",
+      "status": "Checked In"
+    }
+  ]
+}

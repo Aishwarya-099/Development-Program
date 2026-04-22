@@ -1,0 +1,146 @@
+{
+  "tournamentId": "TOUR001",
+  "tournamentName": "International Cricket Championship 2026",
+  "sport": "Cricket",
+  "startDate": "2026-04-21",
+  "endDate": "2026-05-21",
+  "location": "Mumbai, India",
+  "matches": [
+    {
+      "matchId": "MATCH001",
+      "matchNumber": 1,
+      "matchDate": "2026-04-21",
+      "matchTime": "14:30:00",
+      "venue": "Wankhede Stadium",
+      "team1": "India",
+      "team2": "Australia",
+      "overs": 50,
+      "matchFormat": "ODI",
+      "toss": "India won toss, elected to bat",
+      "result": "India won by 7 wickets",
+      "team1Score": "245/3",
+      "team2Score": "242",
+      "man_of_match": "Virat Kohli"
+    },
+    {
+      "matchId": "MATCH002",
+      "matchNumber": 2,
+      "matchDate": "2026-04-22",
+      "matchTime": "10:00:00",
+      "venue": "Arun Jaitley Stadium",
+      "team1": "South Africa",
+      "team2": "Pakistan",
+      "overs": 50,
+      "matchFormat": "ODI",
+      "toss": "South Africa won toss, elected to bowl",
+      "result": "South Africa won by 32 runs",
+      "team1Score": "278/8",
+      "team2Score": "246",
+      "man_of_match": "Quinton de Kock"
+    },
+    {
+      "matchId": "MATCH003",
+      "matchNumber": 3,
+      "matchDate": "2026-04-23",
+      "matchTime": "15:00:00",
+      "venue": "Eden Gardens",
+      "team1": "England",
+      "team2": "West Indies",
+      "overs": 50,
+      "matchFormat": "ODI",
+      "toss": "England won toss, elected to bat",
+      "result": "England won by 5 wickets",
+      "team1Score": "189/5",
+      "team2Score": "187",
+      "man_of_match": "Joe Root"
+    }
+  ],
+  "teams": [
+    {
+      "teamId": "TEAM001",
+      "teamName": "India",
+      "country": "India",
+      "coach": "Rahul Dravid",
+      "captain": "Rohit Sharma",
+      "matches_played": 1,
+      "wins": 1,
+      "losses": 0,
+      "points": 2
+    },
+    {
+      "teamId": "TEAM002",
+      "teamName": "Australia",
+      "country": "Australia",
+      "coach": "Andrew McDonald",
+      "captain": "Pat Cummins",
+      "matches_played": 1,
+      "wins": 0,
+      "losses": 1,
+      "points": 0
+    },
+    {
+      "teamId": "TEAM003",
+      "teamName": "South Africa",
+      "country": "South Africa",
+      "coach": "Mark Boucher",
+      "captain": "Temba Bavuma",
+      "matches_played": 1,
+      "wins": 1,
+      "losses": 0,
+      "points": 2
+    },
+    {
+      "teamId": "TEAM004",
+      "teamName": "Pakistan",
+      "country": "Pakistan",
+      "coach": "Mickey Arthur",
+      "captain": "Babar Azam",
+      "matches_played": 1,
+      "wins": 0,
+      "losses": 1,
+      "points": 0
+    },
+    {
+      "teamId": "TEAM005",
+      "teamName": "England",
+      "country": "England",
+      "coach": "Matthew Mott",
+      "captain": "Ben Stokes",
+      "matches_played": 1,
+      "wins": 1,
+      "losses": 0,
+      "points": 2
+    },
+    {
+      "teamId": "TEAM006",
+      "teamName": "West Indies",
+      "country": "West Indies",
+      "coach": "Phil Simmons",
+      "captain": "Nicholas Pooran",
+      "matches_played": 1,
+      "wins": 0,
+      "losses": 1,
+      "points": 0
+    }
+  ],
+  "scores": [
+    {
+      "scoreId": "SCORE001",
+      "matchId": "MATCH001",
+      "team": "India",
+      "runs": 245,
+      "wickets": 3,
+      "overs": 47.2,
+      "extras": 12
+    },
+    {
+      "scoreId": "SCORE002",
+      "matchId": "MATCH001",
+      "team": "Australia",
+      "runs": 242,
+      "wickets": 10,
+      "overs": 50,
+      "extras": 8
+    }
+  ]
+}

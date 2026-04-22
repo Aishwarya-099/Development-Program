@@ -1,0 +1,171 @@
+{
+  "schoolId": "SCHOOL001",
+  "schoolName": "Global Knowledge Academy",
+  "schoolAddress": "123 Education Street, Mumbai, India",
+  "principalName": "Dr. Rajesh Kumar",
+  "established": 1995,
+  "students": [
+    {
+      "studentId": "STU001",
+      "firstName": "Aarav",
+      "lastName": "Sharma",
+      "dateOfBirth": "2008-05-15",
+      "gender": "Male",
+      "class": "10-A",
+      "rollNumber": 1,
+      "email": "aarav.sharma@school.edu",
+      "phone": "9876543210",
+      "address": "Mumbai"
+    },
+    {
+      "studentId": "STU002",
+      "firstName": "Ananya",
+      "lastName": "Verma",
+      "dateOfBirth": "2008-08-22",
+      "gender": "Female",
+      "class": "10-A",
+      "rollNumber": 2,
+      "email": "ananya.verma@school.edu",
+      "phone": "9876543211",
+      "address": "Mumbai"
+    },
+    {
+      "studentId": "STU003",
+      "firstName": "Aditi",
+      "lastName": "Patel",
+      "dateOfBirth": "2007-12-10",
+      "gender": "Female",
+      "class": "11-B",
+      "rollNumber": 3,
+      "email": "aditi.patel@school.edu",
+      "phone": "9876543212",
+      "address": "Pune"
+    },
+    {
+      "studentId": "STU004",
+      "firstName": "Arjun",
+      "lastName": "Singh",
+      "dateOfBirth": "2009-03-18",
+      "gender": "Male",
+      "class": "9-C",
+      "rollNumber": 4,
+      "email": "arjun.singh@school.edu",
+      "phone": "9876543213",
+      "address": "Delhi"
+    },
+    {
+      "studentId": "STU005",
+      "firstName": "Priya",
+      "lastName": "Desai",
+      "dateOfBirth": "2008-07-25",
+      "gender": "Female",
+      "class": "10-B",
+      "rollNumber": 5,
+      "email": "priya.desai@school.edu",
+      "phone": "9876543214",
+      "address": "Mumbai"
+    }
+  ],
+  "teachers": [
+    {
+      "teacherId": "TEA001",
+      "firstName": "Meera",
+      "lastName": "Gupta",
+      "subject": "Mathematics",
+      "qualification": "B.Sc, B.Ed",
+      "experience": 12,
+      "email": "meera.gupta@school.edu",
+      "phone": "9876543220"
+    },
+    {
+      "teacherId": "TEA002",
+      "firstName": "Rohit",
+      "lastName": "Kumar",
+      "subject": "English",
+      "qualification": "B.A, B.Ed",
+      "experience": 8,
+      "email": "rohit.kumar@school.edu",
+      "phone": "9876543221"
+    },
+    {
+      "teacherId": "TEA003",
+      "firstName": "Sunita",
+      "lastName": "Mishra",
+      "subject": "Science",
+      "qualification": "B.Sc, B.Ed",
+      "experience": 15,
+      "email": "sunita.mishra@school.edu",
+      "phone": "9876543222"
+    },
+    {
+      "teacherId": "TEA004",
+      "firstName": "Vikram",
+      "lastName": "Reddy",
+      "subject": "Social Studies",
+      "qualification": "B.A, B.Ed",
+      "experience": 10,
+      "email": "vikram.reddy@school.edu",
+      "phone": "9876543223"
+    }
+  ],
+  "exams": [
+    {
+      "examId": "EXAM001",
+      "examName": "Mid Term Examination",
+      "examDate": "2026-05-01",
+      "duration": "3 hours",
+      "totalMarks": 100,
+      "class": "10"
+    },
+    {
+      "examId": "EXAM002",
+      "examName": "Final Term Examination",
+      "examDate": "2026-06-01",
+      "duration": "3 hours",
+      "totalMarks": 100,
+      "class": "10"
+    }
+  ],
+  "results": [
+    {
+      "resultId": "RES001",
+      "studentId": "STU001",
+      "examId": "EXAM001",
+      "subject": "Mathematics",
+      "marksObtained": 92,
+      "totalMarks": 100,
+      "percentage": 92,
+      "grade": "A+"
+    },
+    {
+      "resultId": "RES002",
+      "studentId": "STU002",
+      "examId": "EXAM001",
+      "subject": "Mathematics",
+      "marksObtained": 88,
+      "totalMarks": 100,
+      "percentage": 88,
+      "grade": "A"
+    },
+    {
+      "resultId": "RES003",
+      "studentId": "STU001",
+      "examId": "EXAM001",
+      "subject": "English",
+      "marksObtained": 85,
+      "totalMarks": 100,
+      "percentage": 85,
+      "grade": "A"
+    },
+    {
+      "resultId": "RES004",
+      "studentId": "STU003",
+      "examId": "EXAM001",
+      "subject": "Science",
+      "marksObtained": 90,
+      "totalMarks": 100,
+      "percentage": 90,
+      "grade": "A+"
+    }
+  ]
+}
